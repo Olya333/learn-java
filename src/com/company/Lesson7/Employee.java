@@ -4,11 +4,12 @@ public class Employee {
     public double salary;
 
     public void dvoynayaZP() {
-        System.out.println("Dvoynaya z/p= " + salary * 2);
+        double result = salary * 2;
+        System.out.println("Dvoynaya z/p= " + result);
 
     }
 
-    public Employee(double salary2) {
+     public Employee(double salary2) {
         salary = salary2;
 
     }
