@@ -12,7 +12,8 @@ public class Test1 {
     }
 
     public void abc(short s){
-        byte b = 10;
+        final byte b;
+        b = 10;
         System.out.println(s+b);
     }
 
