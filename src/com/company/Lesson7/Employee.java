@@ -12,6 +12,8 @@ public class Employee {
      public Employee(double salary2) {
         salary = salary2;
 
+
+
     }
 
     public static void main(String[] args) {
@@ -23,10 +25,10 @@ public class Employee {
 
 }
 
-class EmployeeTest{
+class EmployeeTest {
     public static void main(String[] args) {
-        Employee emp = new Employee(500);
-        System.out.println(emp.salary);
-        emp.dvoynayaZP();
+
+
+
     }
 }

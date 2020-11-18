@@ -33,8 +33,8 @@ public class Employee {
 class EmployeeTest {
     public static void main(String[] args) {
 
-        Employee emp = new Employee(1, "Ivanov", 25);
-        System.out.println(emp.surname);
+        Employee emp1 = new Employee(1, "Ivanov", 25);
+        System.out.println(emp1.surname);
         Employee emp2 = new Employee("Petrov", 30);
         System.out.println(emp2.surname);
         Employee emp3 = new Employee(2, "Sidorov", 40, 100.35, "IT");

@@ -19,21 +19,25 @@ public class Employee {
     }
 
 
-    Employee(int id2) {
+    public Employee(int id2) {
+
         id = id2;
     }
 
     public Employee(String surname2) {
+
         surname = surname2;
     }
 
     private Employee(double salary2) {
+
         salary = salary2;
     }
 
     double uvelichenieZarplati() {
         salary *= 2;
         return salary;
+
     }
 
 }
