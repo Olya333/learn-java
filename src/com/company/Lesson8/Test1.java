@@ -11,7 +11,7 @@ public class Test1 {
         a=10;
     }
 
-    public void abc(short s){
+    public void abc(final short s){
         final byte b;
         b = 10;
         System.out.println(s+b);
