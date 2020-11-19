@@ -6,6 +6,8 @@ public class Employee {
     int age;
     private double salary;
 
+
+
     public void getId() {
         System.out.println("ID = " + id);
     }
@@ -19,7 +21,7 @@ public class Employee {
     }
 
 
-    public Employee(int id2) {
+    Employee(int id2) {
 
         id = id2;
     }
