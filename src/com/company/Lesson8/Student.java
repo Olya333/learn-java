@@ -11,9 +11,14 @@ public class Student {
         System.out.println("Student # " + count +" sozdan");
 
     }
-}
 
-class StudentTest{
+    public static void showCount(){
+        System.out.println("Vsego sozdanno studentov "+ count);
+
+    }
+
+
+
     public static void main(String[] args) {
         Student st1 = new Student("Ivan",1);
         Student st2 = new Student("Petr",4);
@@ -21,6 +26,9 @@ class StudentTest{
 
         System.out.println(st1.name);
         System.out.println(Student.count);
+        showCount();
+        Student.showCount();
+        st2.showCount();
 
 
 
