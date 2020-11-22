@@ -7,18 +7,20 @@ public class Zadacha2 {
         double pl = PI * radius * radius;
         return pl;
     }
-    public static double dlinna(double radius2){
-        double dl = 2* PI * radius2;
+
+    public static double dlinna(double radius2) {
+        double dl = 2 * PI * radius2;
         return dl;
     }
-    public void info(double radius3){
-        System.out.println("Радиус = "+radius3);
-        System.out.println("Площадь круга = " +ploshad(radius3));
+
+    public void info(double radius3) {
+        System.out.println("Радиус = " + radius3);
+        System.out.println("Площадь круга = " + ploshad(radius3));
         System.out.println("Длина окружности = " + dlinna(radius3));
     }
 }
 
-class Zadacha2Test{
+class Zadacha2Test {
     public static void main(String[] args) {
         Zadacha2 zd = new Zadacha2();
         zd.ploshad(5);
