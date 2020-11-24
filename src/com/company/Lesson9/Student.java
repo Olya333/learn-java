@@ -1,7 +1,7 @@
 package com.company.Lesson9;
 
 public class Student {
-    int a = 10;
+     public static int a = 10;
 
     int b=  this.a;
     public static int c = 5;
