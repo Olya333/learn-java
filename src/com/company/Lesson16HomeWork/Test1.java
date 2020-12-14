@@ -16,6 +16,6 @@ public class Test1 {
 
     public static void main(String[] args) {
         Test1 t = new Test1();
-        t.email("ya@yahoo; on@mail.ru; ona@gmail.com");
+        t.email("ya@yahoo.com;   on@mail.ru;   ona@gmail.com;");
     }
 }
