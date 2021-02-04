@@ -1,9 +1,10 @@
 package com.company.Lesson22;
 
 public class Test3 {
-    void uvelichZP(Employee e){
+    void uvelichZP(Employee e) {
         e.salary = e.salary + 100;
     }
+
     public static void main(String[] args) {
         Doctor doc = new Doctor();
         doc.name = "Ivan";
@@ -40,19 +41,17 @@ class Doctor extends Employee {
         System.out.println("Lechit");
     }
 }
-class Hirurg extends Doctor{
+
+class Hirurg extends Doctor {
     String skalpel;
-    void operaciya(){}
+
+    void operaciya() {
+    }
 }
-class Dantist extends Doctor{
+
+class Dantist extends Doctor {
 
 }
-
-
-
-
-
-
 
 class Teacher extends Employee {
     int kolichestvoUchenikov;
