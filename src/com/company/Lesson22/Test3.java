@@ -41,7 +41,6 @@ class Doctor extends Employee {
         System.out.println("Lechit");
     }
 }
-
 class Hirurg extends Doctor {
     String skalpel;
 

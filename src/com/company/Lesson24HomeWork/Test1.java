@@ -4,6 +4,7 @@ public class Test1 {
     public static void main(String[] args) {
         System.out.println();
         Mechenosec mech = new Mechenosec("Charli");
+        System.out.println(mech.name);
         mech.eat();
         mech.swim();
         mech.sleep();
