@@ -2,30 +2,67 @@ package com.company.Lesson24HomeWork;
 
 public class Test1 {
     public static void main(String[] args) {
-        System.out.println();
-        Mechenosec mech = new Mechenosec("Charli");
-        System.out.println(mech.name);
-        mech.eat();
-        mech.swim();
-        mech.sleep();
+        Animal a1 = new Pingvin("Shkiper1");
+        Animal a2 = new Lev("Leo1");
+        Animal a3 = new Mechenosec("Charli1");
+
+        Fish f1 = new Mechenosec("Charli2");
+        Bird b1 = new Pingvin("Shkiper2");
+        Mammal m1 = new Lev("Leo2");
+
+        Mechenosec mech1 = new Mechenosec("Charli3");
+        Pingvin p1 = new Pingvin("Shkiper3");
+        Lev l1 = new Lev("Leo3");
+
+        Speakable s1 = new Pingvin("Shkiper4");
+        Speakable s2 = new Lev("Leo4");
+
+        Animal [] array1 = {a1,a2,a3,f1,b1,m1,mech1,p1,l1};
+        Speakable [] array2 = {s1,s2,b1,m1,p1,l1};
+
+        for(Animal a : array1){
+            if(a instanceof Mechenosec){
+                Mechenosec m = (Mechenosec)a;
+                System.out.println(m.name);
+                m.sleep();
+                m.swim();
+                m.eat();
+            }else if(a instanceof Pingvin){
+                Pingvin p = (Pingvin)a;
+                System.out.println(p.name);
+                p.eat();
+                p.fly();
+                p.sleep();
+                p.speak();
+            }else if(a instanceof Lev){
+                Lev l = (Lev)a;
+                System.out.println(l.name);
+                l.eat();
+                l.run();
+                l.sleep();
+                l.speak();
+            }
+        }System.out.println();
+
+        for(Speakable s :array2){
+            if(s instanceof Pingvin){
+                Pingvin p = (Pingvin)s;
+                System.out.println(p.name);
+                p.speak();
+                p.sleep();
+                p.fly();
+                p.eat();
+            }else if(s instanceof Lev ){
+                Lev l = (Lev)s;
+                System.out.println(l.name);
+                l.speak();
+                l.sleep();
+                l.run();
+                l.eat();
+            }
+        }
         System.out.println();
 
-        Speakable sp = new Pingvin("Shkiper");
-        sp.speak();
-        System.out.println();
-
-        Animal an = new Lev("Leo");
-        System.out.println(an.name);
-        an.eat();
-        an.sleep();
-        System.out.println();
-
-        Mammal m = new Lev("Leopold");
-        System.out.println(m.name);
-        m.run();
-        m.eat();
-        m.sleep();
-        m.speak();
     }
 }
 abstract class Animal{
